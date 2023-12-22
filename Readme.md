@@ -46,8 +46,14 @@ Para crear un índice con datos de prueba, sigue estos pasos:
 }
 ```
 2) Introduce datos de prueba. Puedes usar el fichero [Employees.raw](https://github.com/UnirCs/elasticsearch-operations-postman/blob/master/Employees_raw.json) con datos de empleados de una compañía (datos modificados de [esta fuente](http://ikeptwalking.com/elasticsearch-sample-data/). Siéntente libre de modificar todo lo que consideres. La carga la puedes realizar con el siguiente comando (recuerda ejecutar el comando en el mismo directorio en el que se encuentre el fichero e incluir el host de tu clúster):
-```
-curl -XPUT '<<host_obtenido_de_bonsai>>/_bulk' --data-binary @Employees_raw.json -H 'Content-Type: application/json'
-```
 
-3) Nos aseguramos de que hemos cargado todos los datos ejecutando desde la consola de Bonsai.io la operación ``/employees/_count?pretty`` que nos debería indicar que hay 9.999 registros almacenados. ¡Estamos listos para comenzar a jugar!
+    (Para Unix)
+    ```
+    curl -XPUT '<<host_obtenido_de_bonsai>>/_bulk' --data-binary @Employees_raw.json -H 'Content-Type: application/json'
+    ```
+    
+    (Para Windows)
+    ```
+    curl -XPUT "<<host_obtenido_de_bonsai>>/_bulk" --data-binary @Employees_raw.json -H "Content-Type: application/json"
+    ```
+  3) Nos aseguramos de que hemos cargado todos los datos ejecutando desde la consola de Bonsai.io la operación ``/employees/_count?pretty`` que nos debería indicar que hay 9.999 registros almacenados. ¡Estamos listos para comenzar a jugar!
