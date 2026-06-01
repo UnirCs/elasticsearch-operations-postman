@@ -45,7 +45,7 @@ Para crear un índice con datos de prueba, sigue estos pasos:
    }
 }
 ```
-2) Introduce datos de prueba. Puedes usar el fichero [Employees.raw](https://github.com/UnirCs/elasticsearch-operations-postman/blob/master/Employees_raw.json) con datos de empleados de una compañía (datos modificados de [esta fuente](http://ikeptwalking.com/elasticsearch-sample-data/). Siéntente libre de modificar todo lo que consideres. La carga la puedes realizar con el siguiente comando (recuerda ejecutar el comando en el mismo directorio en el que se encuentre el fichero e incluir el host de tu clúster):
+2) Introduce datos de prueba. Puedes usar el fichero [Employees.raw](https://github.com/UnirCs/elasticsearch-operations-postman/blob/master/Employees_raw.json) con datos de empleados de una compañía. Siéntente libre de modificar todo lo que consideres. La carga la puedes realizar con el siguiente comando (recuerda ejecutar el comando en el mismo directorio en el que se encuentre el fichero e incluir el host de tu clúster):
 
     Para sistemas basados en Unix:
     ```
